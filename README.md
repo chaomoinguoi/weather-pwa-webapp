@@ -39,9 +39,10 @@ npm run dev
 
 Tạo tài khoản và lấy API key tại: https://openweathermap.org/api
 
-Tạo file .env ở thư mục gốc:
+Trong WeatherService.js thay bằng API key của bạn .
 
-VITE_API_KEY=your_api_key_here
+ const apiKey = "your_api_key_here"; // API key của bạn
+
 
 
 📂 Cấu trúc thư mục chính
