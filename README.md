@@ -2,11 +2,57 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# 🌦 Weather App (React + Vite + PWA)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ứng dụng dự báo thời tiết đơn giản, sử dụng **OpenWeatherMap API**.  
+Hỗ trợ **PWA (Progressive Web App)** với **offline mode** thông qua Service Worker.
+
+---
+
+## 🚀 Tính năng
+- Hiển thị thời tiết hiện tại theo vị trí hoặc thành phố nhập vào.
+- Giao diện responsive, dễ sử dụng.
+- Hỗ trợ **PWA**: có thể cài đặt trên desktop/mobile.
+- Chạy được **offline** với trang fallback `offline.html`.
+
+---
+
+## 📦 Cài đặt & Chạy Project
+
+### 1. Clone dự án
+```bash
+git clone https://github.com/<your-username>/weather-app.git
+cd weather-app
+
+### 2. Cài đặt dependencies 
+npm install
+### 3. Chạy ở chế độ dev
+npm run dev
+
+
+
+🔑 Cấu hình API Key
+
+Ứng dụng dùng OpenWeatherMap.
+
+Tạo tài khoản và lấy API key tại: https://openweathermap.org/api
+
+Tạo file .env ở thư mục gốc:
+
+VITE_API_KEY=your_api_key_here
+
+
+📂 Cấu trúc thư mục chính
+weather-app/
+│── public/
+│   ├── sw.js           # Service Worker (cache offline)
+│   ├── offline.html    # Trang hiển thị khi offline
+│   ├── manifest.json   # Cấu hình PWA
+│── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── WeatherService.js
+│── package.json
+│── vite.config.js
