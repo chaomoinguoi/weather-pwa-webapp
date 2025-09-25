@@ -14,7 +14,7 @@ Hỗ trợ **PWA (Progressive Web App)** với **offline mode** thông qua Servi
 ## 🚀 Tính năng
 - Hiển thị thời tiết hiện tại theo vị trí hoặc thành phố nhập vào.
 - Giao diện responsive, dễ sử dụng.
-- Hỗ trợ **PWA**: có thể cài đặt trên desktop/mobile.
+-  **PWA**
 - Chạy được **offline** với trang fallback `offline.html`.
 
 ---
